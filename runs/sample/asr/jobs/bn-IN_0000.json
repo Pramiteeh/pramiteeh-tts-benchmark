@@ -1,0 +1,117 @@
+{
+  "identity": {
+    "parameters": {
+      "model": "saaras:v3",
+      "mode": "codemix",
+      "language_code": "bn-IN",
+      "with_diarization": false,
+      "with_timestamps": false,
+      "input_audio_codec": "wav"
+    },
+    "inputs": [
+      {
+        "system": "ours",
+        "id": "sarvam_bn_0000",
+        "lang": "bn",
+        "language_code": "bn-IN",
+        "upload_name": "ours__sarvam_bn_0000.wav",
+        "relative_wav": "ours/sarvam_bn_0000.wav",
+        "wav_sha256": "1e61db6e6187c8e564b8ffaa3a26994f8ea6076a83a75b10f3862830ac6db3da",
+        "audio_seconds": 6.72
+      },
+      {
+        "system": "sarvam",
+        "id": "sarvam_bn_0000",
+        "lang": "bn",
+        "language_code": "bn-IN",
+        "upload_name": "sarvam__sarvam_bn_0000.wav",
+        "relative_wav": "sarvam/sarvam_bn_0000.wav",
+        "wav_sha256": "fb6e4fd323327a03f6e5f2e4004740ef09d0f2701f8f0967f875da23b4b5699e",
+        "audio_seconds": 5.632
+      },
+      {
+        "system": "ours",
+        "id": "sarvam_bn_0001",
+        "lang": "bn",
+        "language_code": "bn-IN",
+        "upload_name": "ours__sarvam_bn_0001.wav",
+        "relative_wav": "ours/sarvam_bn_0001.wav",
+        "wav_sha256": "334bee2ce101bf3706959373cfb3620d8ee4ae479f2688cddf8c1824c4e9f411",
+        "audio_seconds": 5.16
+      },
+      {
+        "system": "sarvam",
+        "id": "sarvam_bn_0001",
+        "lang": "bn",
+        "language_code": "bn-IN",
+        "upload_name": "sarvam__sarvam_bn_0001.wav",
+        "relative_wav": "sarvam/sarvam_bn_0001.wav",
+        "wav_sha256": "214b3bba28763af8622e5cc39b3ce7a7ec34545e89230b74b291224230758387",
+        "audio_seconds": 4.437333333333333
+      }
+    ]
+  },
+  "creation_pending": false,
+  "job_id": "20260917_31cc7073-a78e-4554-9622-27e5bed9a7a5",
+  "storage": "Azure_V1",
+  "uploaded": true,
+  "job_state": "Completed",
+  "results": [
+    {
+      "system": "ours",
+      "id": "sarvam_bn_0000",
+      "lang": "bn",
+      "language_code": "bn-IN",
+      "upload_name": "ours__sarvam_bn_0000.wav",
+      "relative_wav": "ours/sarvam_bn_0000.wav",
+      "wav_sha256": "1e61db6e6187c8e564b8ffaa3a26994f8ea6076a83a75b10f3862830ac6db3da",
+      "audio_seconds": 6.72,
+      "status": "ok",
+      "transcript": "ডান। আমি Maggi noodles আর 1 kg Basmati rice তোমার Big Basket cart-এ add করে দিয়েছি।",
+      "request_id": "20260917_9fe948c2-ba50-4ee5-b861-e59c81360e34",
+      "detected_language": "bn-IN"
+    },
+    {
+      "system": "sarvam",
+      "id": "sarvam_bn_0000",
+      "lang": "bn",
+      "language_code": "bn-IN",
+      "upload_name": "sarvam__sarvam_bn_0000.wav",
+      "relative_wav": "sarvam/sarvam_bn_0000.wav",
+      "wav_sha256": "fb6e4fd323327a03f6e5f2e4004740ef09d0f2701f8f0967f875da23b4b5699e",
+      "audio_seconds": 5.632,
+      "status": "ok",
+      "transcript": "ডান আমি ম্যাগি নুডলস আর 1 kg বাসমতি রাইস তোমার বিগ বাস্কেট কার্টে অ্যাড করে দিয়েছি।",
+      "request_id": "20260917_dbd93a93-1422-45b9-8dee-c10bd8e1c5a1",
+      "detected_language": "bn-IN"
+    },
+    {
+      "system": "ours",
+      "id": "sarvam_bn_0001",
+      "lang": "bn",
+      "language_code": "bn-IN",
+      "upload_name": "ours__sarvam_bn_0001.wav",
+      "relative_wav": "ours/sarvam_bn_0001.wav",
+      "wav_sha256": "334bee2ce101bf3706959373cfb3620d8ee4ae479f2688cddf8c1824c4e9f411",
+      "audio_seconds": 5.16,
+      "status": "ok",
+      "transcript": "ঠিক আছে, লিভিং রুম এর এসি ১৮ ডিগ্রি সেলসিয়াস তে শেড করছি।",
+      "request_id": "20260917_d27fd615-a242-4e36-9e3e-70fd8b734c44",
+      "detected_language": "bn-IN"
+    },
+    {
+      "system": "sarvam",
+      "id": "sarvam_bn_0001",
+      "lang": "bn",
+      "language_code": "bn-IN",
+      "upload_name": "sarvam__sarvam_bn_0001.wav",
+      "relative_wav": "sarvam/sarvam_bn_0001.wav",
+      "wav_sha256": "214b3bba28763af8622e5cc39b3ce7a7ec34545e89230b74b291224230758387",
+      "audio_seconds": 4.437333333333333,
+      "status": "ok",
+      "transcript": "ঠিক আছে, লিভিং রুমের এসি ১৮ ডিগ্রি সেলসিয়াস-এ শেড করছি।",
+      "request_id": "20260917_3f994343-09cb-448f-8410-2b38a5685d7c",
+      "detected_language": "bn-IN"
+    }
+  ]
+}

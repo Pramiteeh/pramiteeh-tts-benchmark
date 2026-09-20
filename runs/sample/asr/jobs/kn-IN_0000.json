@@ -1,0 +1,117 @@
+{
+  "identity": {
+    "parameters": {
+      "model": "saaras:v3",
+      "mode": "codemix",
+      "language_code": "kn-IN",
+      "with_diarization": false,
+      "with_timestamps": false,
+      "input_audio_codec": "wav"
+    },
+    "inputs": [
+      {
+        "system": "ours",
+        "id": "sarvam_kn_0030",
+        "lang": "kn",
+        "language_code": "kn-IN",
+        "upload_name": "ours__sarvam_kn_0030.wav",
+        "relative_wav": "ours/sarvam_kn_0030.wav",
+        "wav_sha256": "754f6f20065d771bed8930495f1238fcab411f3decaf9e86f6caebdd3e157708",
+        "audio_seconds": 11.013
+      },
+      {
+        "system": "sarvam",
+        "id": "sarvam_kn_0030",
+        "lang": "kn",
+        "language_code": "kn-IN",
+        "upload_name": "sarvam__sarvam_kn_0030.wav",
+        "relative_wav": "sarvam/sarvam_kn_0030.wav",
+        "wav_sha256": "e895a56cbfc15a12d10f1dd7a0c2069297725e776dbf94ad2c7199ba49d9af1b",
+        "audio_seconds": 7.253333333333333
+      },
+      {
+        "system": "ours",
+        "id": "sarvam_kn_0031",
+        "lang": "kn",
+        "language_code": "kn-IN",
+        "upload_name": "ours__sarvam_kn_0031.wav",
+        "relative_wav": "ours/sarvam_kn_0031.wav",
+        "wav_sha256": "a779de67bcb76ab49481e2c043fdb0d6108cf95fe0b6d08ff7d805312a8b249a",
+        "audio_seconds": 6.4
+      },
+      {
+        "system": "sarvam",
+        "id": "sarvam_kn_0031",
+        "lang": "kn",
+        "language_code": "kn-IN",
+        "upload_name": "sarvam__sarvam_kn_0031.wav",
+        "relative_wav": "sarvam/sarvam_kn_0031.wav",
+        "wav_sha256": "1a5bc013f15b2fdef2e6f10b3e95340c66d0d78fa3a4829c0687c60f9b679a2d",
+        "audio_seconds": 4.352
+      }
+    ]
+  },
+  "creation_pending": false,
+  "job_id": "20260917_ff4769ea-e56e-46e0-97a4-c16452a301e6",
+  "storage": "Azure_V1",
+  "uploaded": true,
+  "job_state": "Completed",
+  "results": [
+    {
+      "system": "ours",
+      "id": "sarvam_kn_0030",
+      "lang": "kn",
+      "language_code": "kn-IN",
+      "upload_name": "ours__sarvam_kn_0030.wav",
+      "relative_wav": "ours/sarvam_kn_0030.wav",
+      "wav_sha256": "754f6f20065d771bed8930495f1238fcab411f3decaf9e86f6caebdd3e157708",
+      "audio_seconds": 11.013,
+      "status": "ok",
+      "transcript": "Done. ನಾನು Koget toothpaste ಮತ್ತು 500g Bru instant coffee ಅನ್ನು ನಿಮ್ಮ Swiggy Instamart cart-ಗೆ add ಮಾಡಿದ್ದೀನಿ.",
+      "request_id": "20260917_733aea36-de3d-4cd2-b431-88008f17f894",
+      "detected_language": "kn-IN"
+    },
+    {
+      "system": "sarvam",
+      "id": "sarvam_kn_0030",
+      "lang": "kn",
+      "language_code": "kn-IN",
+      "upload_name": "sarvam__sarvam_kn_0030.wav",
+      "relative_wav": "sarvam/sarvam_kn_0030.wav",
+      "wav_sha256": "e895a56cbfc15a12d10f1dd7a0c2069297725e776dbf94ad2c7199ba49d9af1b",
+      "audio_seconds": 7.253333333333333,
+      "status": "ok",
+      "transcript": "ಡನ್, ನಾನು Colgate toothpaste ಮತ್ತು 500 ghee Bru instant coffee-ಯನ್ನು ನಿಮ್ಮ Swiggy Instamart cart-ಗೆ add ಮಾಡಿದ್ದೀನಿ.",
+      "request_id": "20260917_e69606b8-ae9d-4437-add5-4b5383c2e5d0",
+      "detected_language": "kn-IN"
+    },
+    {
+      "system": "ours",
+      "id": "sarvam_kn_0031",
+      "lang": "kn",
+      "language_code": "kn-IN",
+      "upload_name": "ours__sarvam_kn_0031.wav",
+      "relative_wav": "ours/sarvam_kn_0031.wav",
+      "wav_sha256": "a779de67bcb76ab49481e2c043fdb0d6108cf95fe0b6d08ff7d805312a8b249a",
+      "audio_seconds": 6.4,
+      "status": "ok",
+      "transcript": "ಸರಿ, guest room ACಯನ್ನು 21°Cಗೆ ಹೊಂದಿಸಲಾಗುತ್ತಿದೆ.",
+      "request_id": "20260917_77a30dca-a47e-426c-8d5f-e11074db3b7f",
+      "detected_language": "kn-IN"
+    },
+    {
+      "system": "sarvam",
+      "id": "sarvam_kn_0031",
+      "lang": "kn",
+      "language_code": "kn-IN",
+      "upload_name": "sarvam__sarvam_kn_0031.wav",
+      "relative_wav": "sarvam/sarvam_kn_0031.wav",
+      "wav_sha256": "1a5bc013f15b2fdef2e6f10b3e95340c66d0d78fa3a4829c0687c60f9b679a2d",
+      "audio_seconds": 4.352,
+      "status": "ok",
+      "transcript": "ಸರಿ, ಗೆಸ್ಟ್ ರೂಮ್ ಎಸಿಯನ್ನು ಇಪ್ಪತ್ತೊಂದು ಡಿಗ್ರಿ ಸೆಲ್ಸಿಯಸ್‌ಗೆ ಹೊಂದಿಸಲಾಗುತ್ತಿದೆ.",
+      "request_id": "20260917_2e1a4696-86cf-4ad6-a32a-55545a20b71d",
+      "detected_language": "kn-IN"
+    }
+  ]
+}

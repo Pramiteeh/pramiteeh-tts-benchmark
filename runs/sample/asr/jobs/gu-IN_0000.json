@@ -1,0 +1,117 @@
+{
+  "identity": {
+    "parameters": {
+      "model": "saaras:v3",
+      "mode": "codemix",
+      "language_code": "gu-IN",
+      "with_diarization": false,
+      "with_timestamps": false,
+      "input_audio_codec": "wav"
+    },
+    "inputs": [
+      {
+        "system": "ours",
+        "id": "sarvam_gu_0010",
+        "lang": "gu",
+        "language_code": "gu-IN",
+        "upload_name": "ours__sarvam_gu_0010.wav",
+        "relative_wav": "ours/sarvam_gu_0010.wav",
+        "wav_sha256": "36aa038cbbd44da58b863ebe24527d0227e0031e437ee0c536e80f2e15fbbff8",
+        "audio_seconds": 8.76
+      },
+      {
+        "system": "sarvam",
+        "id": "sarvam_gu_0010",
+        "lang": "gu",
+        "language_code": "gu-IN",
+        "upload_name": "sarvam__sarvam_gu_0010.wav",
+        "relative_wav": "sarvam/sarvam_gu_0010.wav",
+        "wav_sha256": "9b5e9400ba696b783d25f4c6a96fa6dadc0d1e0c2e4e748ba3752606ea22e1cd",
+        "audio_seconds": 7.168
+      },
+      {
+        "system": "ours",
+        "id": "sarvam_gu_0011",
+        "lang": "gu",
+        "language_code": "gu-IN",
+        "upload_name": "ours__sarvam_gu_0011.wav",
+        "relative_wav": "ours/sarvam_gu_0011.wav",
+        "wav_sha256": "9edf3d8de954fde342e393672530070dfffc4c286f3172950b8befe2d9fefa79",
+        "audio_seconds": 5.746
+      },
+      {
+        "system": "sarvam",
+        "id": "sarvam_gu_0011",
+        "lang": "gu",
+        "language_code": "gu-IN",
+        "upload_name": "sarvam__sarvam_gu_0011.wav",
+        "relative_wav": "sarvam/sarvam_gu_0011.wav",
+        "wav_sha256": "f306c1877f04ed4411a5b7955920a9a6611fb90a98bd888a3f3cc38e66858eee",
+        "audio_seconds": 4.778666666666667
+      }
+    ]
+  },
+  "creation_pending": false,
+  "job_id": "20260917_6369137a-894b-4c30-ac72-09489461f103",
+  "storage": "Azure_V1",
+  "uploaded": true,
+  "job_state": "Completed",
+  "results": [
+    {
+      "system": "ours",
+      "id": "sarvam_gu_0010",
+      "lang": "gu",
+      "language_code": "gu-IN",
+      "upload_name": "ours__sarvam_gu_0010.wav",
+      "relative_wav": "ours/sarvam_gu_0010.wav",
+      "wav_sha256": "36aa038cbbd44da58b863ebe24527d0227e0031e437ee0c536e80f2e15fbbff8",
+      "audio_seconds": 8.76,
+      "status": "ok",
+      "transcript": "done તમે Amul butter અને 1 kg India Gate બાઝમારી rice તમારા BigBasket cart-માં add કરી દીધા છે.",
+      "request_id": "20260917_171141f7-dd0f-488f-9e97-19df4a5ee1eb",
+      "detected_language": "gu-IN"
+    },
+    {
+      "system": "sarvam",
+      "id": "sarvam_gu_0010",
+      "lang": "gu",
+      "language_code": "gu-IN",
+      "upload_name": "sarvam__sarvam_gu_0010.wav",
+      "relative_wav": "sarvam/sarvam_gu_0010.wav",
+      "wav_sha256": "9b5e9400ba696b783d25f4c6a96fa6dadc0d1e0c2e4e748ba3752606ea22e1cd",
+      "audio_seconds": 7.168,
+      "status": "ok",
+      "transcript": "ડન, મેં અમૂલ બટર અને એક કિલોગ્રામ ઇન્ડિયા ગેટ બાસમતી ચોખા તમારા બિગ બાસ્કેટ કાર્ટમાં એડ કરી દીધા છે.",
+      "request_id": "20260917_2b664d58-d91e-444b-b21d-cb7aaf9f6ccf",
+      "detected_language": "gu-IN"
+    },
+    {
+      "system": "ours",
+      "id": "sarvam_gu_0011",
+      "lang": "gu",
+      "language_code": "gu-IN",
+      "upload_name": "ours__sarvam_gu_0011.wav",
+      "relative_wav": "ours/sarvam_gu_0011.wav",
+      "wav_sha256": "9edf3d8de954fde342e393672530070dfffc4c286f3172950b8befe2d9fefa79",
+      "audio_seconds": 5.746,
+      "status": "ok",
+      "transcript": "ઠીક છે, લિવિંગ રૂમનું એસી 18 ડિગ્રી સેલ્સિયસ પર સેટ કરી રહ્યો છું.",
+      "request_id": "20260917_6b3eacfd-efa4-47cf-9b21-3a00a4cc8a3e",
+      "detected_language": "gu-IN"
+    },
+    {
+      "system": "sarvam",
+      "id": "sarvam_gu_0011",
+      "lang": "gu",
+      "language_code": "gu-IN",
+      "upload_name": "sarvam__sarvam_gu_0011.wav",
+      "relative_wav": "sarvam/sarvam_gu_0011.wav",
+      "wav_sha256": "f306c1877f04ed4411a5b7955920a9a6611fb90a98bd888a3f3cc38e66858eee",
+      "audio_seconds": 4.778666666666667,
+      "status": "ok",
+      "transcript": "ઠીક છે, લિવિંગ રૂમનું એસી અઢાર ડિગ્રી સેલ્સિયસ પર સેટ કરી રહ્યો છું.",
+      "request_id": "20260917_9e8a6013-d075-4c62-832f-25c347e600c4",
+      "detected_language": "gu-IN"
+    }
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "identity": {
+    "parameters": {
+      "model": "saaras:v3",
+      "mode": "codemix",
+      "language_code": "hi-IN",
+      "with_diarization": false,
+      "with_timestamps": false,
+      "input_audio_codec": "wav"
+    },
+    "inputs": [
+      {
+        "system": "ours",
+        "id": "sarvam_hi_0020",
+        "lang": "hi",
+        "language_code": "hi-IN",
+        "upload_name": "ours__sarvam_hi_0020.wav",
+        "relative_wav": "ours/sarvam_hi_0020.wav",
+        "wav_sha256": "9ac187c19cf3cf166329846d6997659bf31bfa1e3bc18ca50f1a9aa7bf36f1cf",
+        "audio_seconds": 6.92
+      },
+      {
+        "system": "sarvam",
+        "id": "sarvam_hi_0020",
+        "lang": "hi",
+        "language_code": "hi-IN",
+        "upload_name": "sarvam__sarvam_hi_0020.wav",
+        "relative_wav": "sarvam/sarvam_hi_0020.wav",
+        "wav_sha256": "61070ddb30ad017811ea3748abf0a6c22969c3f81ac06511c9f73ee81291c29e",
+        "audio_seconds": 5.632
+      },
+      {
+        "system": "ours",
+        "id": "sarvam_hi_0021",
+        "lang": "hi",
+        "language_code": "hi-IN",
+        "upload_name": "ours__sarvam_hi_0021.wav",
+        "relative_wav": "ours/sarvam_hi_0021.wav",
+        "wav_sha256": "abf6a616178de47cf42790b3268da0a6e4bea057f087e5461edcb67e31d4cbf0",
+        "audio_seconds": 4.248
+      },
+      {
+        "system": "sarvam",
+        "id": "sarvam_hi_0021",
+        "lang": "hi",
+        "language_code": "hi-IN",
+        "upload_name": "sarvam__sarvam_hi_0021.wav",
+        "relative_wav": "sarvam/sarvam_hi_0021.wav",
+        "wav_sha256": "4afa47fd015c83535edb1a5573f33e048fd63f680dde547aca1d24f3e98eb6a3",
+        "audio_seconds": 3.6693333333333333
+      }
+    ]
+  },
+  "creation_pending": false,
+  "job_id": "20260917_bb17cd6f-a3ac-45aa-b6c1-9ff1f0e3228d",
+  "storage": "Azure_V1",
+  "uploaded": true,
+  "job_state": "Completed",
+  "results": [
+    {
+      "system": "ours",
+      "id": "sarvam_hi_0020",
+      "lang": "hi",
+      "language_code": "hi-IN",
+      "upload_name": "ours__sarvam_hi_0020.wav",
+      "relative_wav": "ours/sarvam_hi_0020.wav",
+      "wav_sha256": "9ac187c19cf3cf166329846d6997659bf31bfa1e3bc18ca50f1a9aa7bf36f1cf",
+      "audio_seconds": 6.92,
+      "status": "ok",
+      "transcript": "मैंने अमूल बर् और 5 kg आशीर्वाद एटा को आपके ज़ेप्टो कार्ट में ऐड कर दिया है।",
+      "request_id": "20260917_9ae3e46b-0dd5-4b46-ba5d-69babf9e6ef8",
+      "detected_language": "hi-IN"
+    },
+    {
+      "system": "sarvam",
+      "id": "sarvam_hi_0020",
+      "lang": "hi",
+      "language_code": "hi-IN",
+      "upload_name": "sarvam__sarvam_hi_0020.wav",
+      "relative_wav": "sarvam/sarvam_hi_0020.wav",
+      "wav_sha256": "61070ddb30ad017811ea3748abf0a6c22969c3f81ac06511c9f73ee81291c29e",
+      "audio_seconds": 5.632,
+      "status": "ok",
+      "transcript": "डन, मैंने अमूल बटर और 5 किलोग्राम आशीर्वाद आटा को आपके Zepto कार्ट में ऐड कर दिया है।",
+      "request_id": "20260917_d10c94f2-d441-4063-9e96-64b91ede5138",
+      "detected_language": "hi-IN"
+    },
+    {
+      "system": "ours",
+      "id": "sarvam_hi_0021",
+      "lang": "hi",
+      "language_code": "hi-IN",
+      "upload_name": "ours__sarvam_hi_0021.wav",
+      "relative_wav": "ours/sarvam_hi_0021.wav",
+      "wav_sha256": "abf6a616178de47cf42790b3268da0a6e4bea057f087e5461edcb67e31d4cbf0",
+      "audio_seconds": 4.248,
+      "status": "ok",
+      "transcript": "ठीक है। गैस रूम का AC 18°C पर सेट कर रहा हूं।",
+      "request_id": "20260917_7626db00-d482-426d-b00f-3b84af627e8f",
+      "detected_language": "hi-IN"
+    },
+    {
+      "system": "sarvam",
+      "id": "sarvam_hi_0021",
+      "lang": "hi",
+      "language_code": "hi-IN",
+      "upload_name": "sarvam__sarvam_hi_0021.wav",
+      "relative_wav": "sarvam/sarvam_hi_0021.wav",
+      "wav_sha256": "4afa47fd015c83535edb1a5573f33e048fd63f680dde547aca1d24f3e98eb6a3",
+      "audio_seconds": 3.6693333333333333,
+      "status": "ok",
+      "transcript": "ठीक है guest room का AC 18°C पर set कर रहा हूँ।",
+      "request_id": "20260917_d2200f76-a120-4f9a-81d8-c8fb8dbda68e",
+      "detected_language": "hi-IN"
+    }
+  ]
+}

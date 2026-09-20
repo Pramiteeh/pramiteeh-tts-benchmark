@@ -1,0 +1,117 @@
+{
+  "identity": {
+    "parameters": {
+      "model": "saaras:v3",
+      "mode": "codemix",
+      "language_code": "te-IN",
+      "with_diarization": false,
+      "with_timestamps": false,
+      "input_audio_codec": "wav"
+    },
+    "inputs": [
+      {
+        "system": "ours",
+        "id": "sarvam_te_0090",
+        "lang": "te",
+        "language_code": "te-IN",
+        "upload_name": "ours__sarvam_te_0090.wav",
+        "relative_wav": "ours/sarvam_te_0090.wav",
+        "wav_sha256": "40ea0aec311eb1a497e84e137cc8f994bcd7e89654503481c3c3410fa4b542ce",
+        "audio_seconds": 6.886
+      },
+      {
+        "system": "sarvam",
+        "id": "sarvam_te_0090",
+        "lang": "te",
+        "language_code": "te-IN",
+        "upload_name": "sarvam__sarvam_te_0090.wav",
+        "relative_wav": "sarvam/sarvam_te_0090.wav",
+        "wav_sha256": "3235c367bf0f629bde436194c67004696bc8cd2b8327fd2b5357fc9355e95d10",
+        "audio_seconds": 5.973333333333334
+      },
+      {
+        "system": "ours",
+        "id": "sarvam_te_0091",
+        "lang": "te",
+        "language_code": "te-IN",
+        "upload_name": "ours__sarvam_te_0091.wav",
+        "relative_wav": "ours/sarvam_te_0091.wav",
+        "wav_sha256": "186b6a43077bef864fd6c37d1a61f50a90c6b6cba64a3cc733095f2c69c451db",
+        "audio_seconds": 4.181
+      },
+      {
+        "system": "sarvam",
+        "id": "sarvam_te_0091",
+        "lang": "te",
+        "language_code": "te-IN",
+        "upload_name": "sarvam__sarvam_te_0091.wav",
+        "relative_wav": "sarvam/sarvam_te_0091.wav",
+        "wav_sha256": "7398e8f6355be7153d01e25acbeecb783b9fdaa4f84327a72029012b5d825a0f",
+        "audio_seconds": 4.181333333333333
+      }
+    ]
+  },
+  "creation_pending": false,
+  "job_id": "20260917_547430f5-42d5-40e4-b3a0-0608298ff255",
+  "storage": "Azure_V1",
+  "uploaded": true,
+  "job_state": "Completed",
+  "results": [
+    {
+      "system": "ours",
+      "id": "sarvam_te_0090",
+      "lang": "te",
+      "language_code": "te-IN",
+      "upload_name": "ours__sarvam_te_0090.wav",
+      "relative_wav": "ours/sarvam_te_0090.wav",
+      "wav_sha256": "40ea0aec311eb1a497e84e137cc8f994bcd7e89654503481c3c3410fa4b542ce",
+      "audio_seconds": 6.886,
+      "status": "ok",
+      "transcript": "డన్ మీ బిగ్ బాస్కెట్ కార్ట్ లో Maggi noodles మరియు 500g Ashiwad అట్ట యాడ్ చేశాను.",
+      "request_id": "20260917_b158297d-e5b9-4c5d-a87e-3cbaf652485a",
+      "detected_language": "te-IN"
+    },
+    {
+      "system": "sarvam",
+      "id": "sarvam_te_0090",
+      "lang": "te",
+      "language_code": "te-IN",
+      "upload_name": "sarvam__sarvam_te_0090.wav",
+      "relative_wav": "sarvam/sarvam_te_0090.wav",
+      "wav_sha256": "3235c367bf0f629bde436194c67004696bc8cd2b8327fd2b5357fc9355e95d10",
+      "audio_seconds": 5.973333333333334,
+      "status": "ok",
+      "transcript": "డన్, మీ బిగ్ బాస్కెట్ కార్ట్‌లో మ్యాగీ నూడుల్స్ మరియు 500 జీ ఆశీర్వాద్ అట్టా యాడ్ చేశాను.",
+      "request_id": "20260917_4372d33d-31f3-472f-b632-9e0c097f415e",
+      "detected_language": "te-IN"
+    },
+    {
+      "system": "ours",
+      "id": "sarvam_te_0091",
+      "lang": "te",
+      "language_code": "te-IN",
+      "upload_name": "ours__sarvam_te_0091.wav",
+      "relative_wav": "ours/sarvam_te_0091.wav",
+      "wav_sha256": "186b6a43077bef864fd6c37d1a61f50a90c6b6cba64a3cc733095f2c69c451db",
+      "audio_seconds": 4.181,
+      "status": "ok",
+      "transcript": "సరే, living room AC-ని 20°C-కి సెట్ చేస్తున్నాను.",
+      "request_id": "20260917_502d7adf-51c2-4fef-b840-3d1691d658e4",
+      "detected_language": "te-IN"
+    },
+    {
+      "system": "sarvam",
+      "id": "sarvam_te_0091",
+      "lang": "te",
+      "language_code": "te-IN",
+      "upload_name": "sarvam__sarvam_te_0091.wav",
+      "relative_wav": "sarvam/sarvam_te_0091.wav",
+      "wav_sha256": "7398e8f6355be7153d01e25acbeecb783b9fdaa4f84327a72029012b5d825a0f",
+      "audio_seconds": 4.181333333333333,
+      "status": "ok",
+      "transcript": "సరే, living room ACని 20°Cకి set చేస్తున్నాను.",
+      "request_id": "20260917_d06fb207-b4ef-44d2-881d-ad128674a04f",
+      "detected_language": "te-IN"
+    }
+  ]
+}

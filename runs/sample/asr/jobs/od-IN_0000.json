@@ -1,0 +1,117 @@
+{
+  "identity": {
+    "parameters": {
+      "model": "saaras:v3",
+      "mode": "codemix",
+      "language_code": "od-IN",
+      "with_diarization": false,
+      "with_timestamps": false,
+      "input_audio_codec": "wav"
+    },
+    "inputs": [
+      {
+        "system": "ours",
+        "id": "sarvam_od_0060",
+        "lang": "or",
+        "language_code": "od-IN",
+        "upload_name": "ours__sarvam_od_0060.wav",
+        "relative_wav": "ours/sarvam_od_0060.wav",
+        "wav_sha256": "51d07f42385a197e665b1badd463eda8d9b6923d064518e58ddd27871ac6e80c",
+        "audio_seconds": 8.548
+      },
+      {
+        "system": "sarvam",
+        "id": "sarvam_od_0060",
+        "lang": "or",
+        "language_code": "od-IN",
+        "upload_name": "sarvam__sarvam_od_0060.wav",
+        "relative_wav": "sarvam/sarvam_od_0060.wav",
+        "wav_sha256": "35091eb20ce6009481940d28804d3c629441366ce3caeff8b75ad7c44fc26c1d",
+        "audio_seconds": 6.229333333333333
+      },
+      {
+        "system": "ours",
+        "id": "sarvam_od_0061",
+        "lang": "or",
+        "language_code": "od-IN",
+        "upload_name": "ours__sarvam_od_0061.wav",
+        "relative_wav": "ours/sarvam_od_0061.wav",
+        "wav_sha256": "057e01435f915d969013cdd8b9f943d76c78889fdc3a44efd2f91978ae10cc52",
+        "audio_seconds": 6.85
+      },
+      {
+        "system": "sarvam",
+        "id": "sarvam_od_0061",
+        "lang": "or",
+        "language_code": "od-IN",
+        "upload_name": "sarvam__sarvam_od_0061.wav",
+        "relative_wav": "sarvam/sarvam_od_0061.wav",
+        "wav_sha256": "be657ce80fd848c855e30d6363d4006fac6ed490121b6bae9ed734fd77a3c1d9",
+        "audio_seconds": 4.778666666666667
+      }
+    ]
+  },
+  "creation_pending": false,
+  "job_id": "20260917_4dc48dbe-6f0c-4220-9c54-81e0d4e84270",
+  "storage": "Azure_V1",
+  "uploaded": true,
+  "job_state": "Completed",
+  "results": [
+    {
+      "system": "ours",
+      "id": "sarvam_od_0060",
+      "lang": "or",
+      "language_code": "od-IN",
+      "upload_name": "ours__sarvam_od_0060.wav",
+      "relative_wav": "ours/sarvam_od_0060.wav",
+      "wav_sha256": "51d07f42385a197e665b1badd463eda8d9b6923d064518e58ddd27871ac6e80c",
+      "audio_seconds": 8.548,
+      "status": "ok",
+      "transcript": "ମୁଁ 5 kg ଆଶୀର୍ବାଦ ଆଟା ଆଉ ଆମୋଲ ବଟରକୁ ତୁମର Amazon cart-ରେ add କରିଦେଇଛି।",
+      "request_id": "20260917_041fd6c9-343d-4ff9-9999-449ff6483ae6",
+      "detected_language": "od-IN"
+    },
+    {
+      "system": "sarvam",
+      "id": "sarvam_od_0060",
+      "lang": "or",
+      "language_code": "od-IN",
+      "upload_name": "sarvam__sarvam_od_0060.wav",
+      "relative_wav": "sarvam/sarvam_od_0060.wav",
+      "wav_sha256": "35091eb20ce6009481940d28804d3c629441366ce3caeff8b75ad7c44fc26c1d",
+      "audio_seconds": 6.229333333333333,
+      "status": "ok",
+      "transcript": "ଡନ୍, ମୁଁ 5 kg ଆଶୀର୍ବାଦ ଆଟା ଆଉ Amul butter-କୁ ତୁମର Amazon cart-ରେ add କରିଛି।",
+      "request_id": "20260917_f998b4e0-4f30-4e70-910e-cf5aee629a60",
+      "detected_language": "od-IN"
+    },
+    {
+      "system": "ours",
+      "id": "sarvam_od_0061",
+      "lang": "or",
+      "language_code": "od-IN",
+      "upload_name": "ours__sarvam_od_0061.wav",
+      "relative_wav": "ours/sarvam_od_0061.wav",
+      "wav_sha256": "057e01435f915d969013cdd8b9f943d76c78889fdc3a44efd2f91978ae10cc52",
+      "audio_seconds": 6.85,
+      "status": "ok",
+      "transcript": "ଫିକୋ ଅଛି ଗେଷ୍ଟ ରୁମ୍ର ଏସିକୁ କୋଡ଼ିଏ ଡିଗ୍ରୀ ସେଲସିୟସ୍ରେ ସେଟ୍ କରୁଛି।",
+      "request_id": "20260917_0389fec2-4a52-4802-bdce-a33b3dbfa0e6",
+      "detected_language": "od-IN"
+    },
+    {
+      "system": "sarvam",
+      "id": "sarvam_od_0061",
+      "lang": "or",
+      "language_code": "od-IN",
+      "upload_name": "sarvam__sarvam_od_0061.wav",
+      "relative_wav": "sarvam/sarvam_od_0061.wav",
+      "wav_sha256": "be657ce80fd848c855e30d6363d4006fac6ed490121b6bae9ed734fd77a3c1d9",
+      "audio_seconds": 4.778666666666667,
+      "status": "ok",
+      "transcript": "ଠିକ୍ ଅଛି, guest roomର ACକୁ 20°Cରେ set କରୁଛି।",
+      "request_id": "20260917_f8cf8fd9-bc60-4b2b-aa6b-9547a91ef439",
+      "detected_language": "od-IN"
+    }
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "identity": {
+    "parameters": {
+      "model": "saaras:v3",
+      "mode": "codemix",
+      "language_code": "ta-IN",
+      "with_diarization": false,
+      "with_timestamps": false,
+      "input_audio_codec": "wav"
+    },
+    "inputs": [
+      {
+        "system": "ours",
+        "id": "sarvam_ta_0080",
+        "lang": "ta",
+        "language_code": "ta-IN",
+        "upload_name": "ours__sarvam_ta_0080.wav",
+        "relative_wav": "ours/sarvam_ta_0080.wav",
+        "wav_sha256": "9f102193b84c6b2b557b20d5da6f343443e38e4d03e131581cd73c2226406a98",
+        "audio_seconds": 7.163
+      },
+      {
+        "system": "sarvam",
+        "id": "sarvam_ta_0080",
+        "lang": "ta",
+        "language_code": "ta-IN",
+        "upload_name": "sarvam__sarvam_ta_0080.wav",
+        "relative_wav": "sarvam/sarvam_ta_0080.wav",
+        "wav_sha256": "1c51b8504424dd8f76b25c46f7953e63380e71720bc11a5cf41eeb0046377e0c",
+        "audio_seconds": 4.266666666666667
+      },
+      {
+        "system": "ours",
+        "id": "sarvam_ta_0081",
+        "lang": "ta",
+        "language_code": "ta-IN",
+        "upload_name": "ours__sarvam_ta_0081.wav",
+        "relative_wav": "ours/sarvam_ta_0081.wav",
+        "wav_sha256": "e021e7bdc3622fb8596d3bb3728bbcd05ebc670f93e96f6899d02312928c3cae",
+        "audio_seconds": 5.52
+      },
+      {
+        "system": "sarvam",
+        "id": "sarvam_ta_0081",
+        "lang": "ta",
+        "language_code": "ta-IN",
+        "upload_name": "sarvam__sarvam_ta_0081.wav",
+        "relative_wav": "sarvam/sarvam_ta_0081.wav",
+        "wav_sha256": "0575daca112dedef2150d7b72609fab9679acf5d673766f7be82f3f1ed613773",
+        "audio_seconds": 3.498666666666667
+      }
+    ]
+  },
+  "creation_pending": false,
+  "job_id": "20260917_d631578a-fa19-4b4b-bac7-c1121f5e6f4f",
+  "storage": "Azure_V1",
+  "uploaded": true,
+  "job_state": "Completed",
+  "results": [
+    {
+      "system": "ours",
+      "id": "sarvam_ta_0080",
+      "lang": "ta",
+      "language_code": "ta-IN",
+      "upload_name": "ours__sarvam_ta_0080.wav",
+      "relative_wav": "ours/sarvam_ta_0080.wav",
+      "wav_sha256": "9f102193b84c6b2b557b20d5da6f343443e38e4d03e131581cd73c2226406a98",
+      "audio_seconds": 7.163,
+      "status": "ok",
+      "transcript": "டன், உங்க ஜெப்டோ கார்ட்ல ஆசீர்வாட் ஆட்டம் மற்றும் 1 கிலோகிராம்ஸ் டால் ஐ ஆட் பண்ணிட்டேன்.",
+      "request_id": "20260917_1e32422d-7451-46c7-ae61-0d14d1b53112",
+      "detected_language": "ta-IN"
+    },
+    {
+      "system": "sarvam",
+      "id": "sarvam_ta_0080",
+      "lang": "ta",
+      "language_code": "ta-IN",
+      "upload_name": "sarvam__sarvam_ta_0080.wav",
+      "relative_wav": "sarvam/sarvam_ta_0080.wav",
+      "wav_sha256": "1c51b8504424dd8f76b25c46f7953e63380e71720bc11a5cf41eeb0046377e0c",
+      "audio_seconds": 4.266666666666667,
+      "status": "ok",
+      "transcript": "டன், உங்க Zepto cart-ல Aashirvaad Atta மற்றும் 1 kg தெல்லை add பண்ணிட்டேன்.",
+      "request_id": "20260917_3889c055-4c97-4da1-917d-5e6be91258ad",
+      "detected_language": "ta-IN"
+    },
+    {
+      "system": "ours",
+      "id": "sarvam_ta_0081",
+      "lang": "ta",
+      "language_code": "ta-IN",
+      "upload_name": "ours__sarvam_ta_0081.wav",
+      "relative_wav": "ours/sarvam_ta_0081.wav",
+      "wav_sha256": "e021e7bdc3622fb8596d3bb3728bbcd05ebc670f93e96f6899d02312928c3cae",
+      "audio_seconds": 5.52,
+      "status": "ok",
+      "transcript": "சரி, living room AC-ஐ 22°C-க்கு வைக்கிறேன்.",
+      "request_id": "20260917_729d3538-2972-4089-b069-3f5d8f2026d9",
+      "detected_language": "ta-IN"
+    },
+    {
+      "system": "sarvam",
+      "id": "sarvam_ta_0081",
+      "lang": "ta",
+      "language_code": "ta-IN",
+      "upload_name": "sarvam__sarvam_ta_0081.wav",
+      "relative_wav": "sarvam/sarvam_ta_0081.wav",
+      "wav_sha256": "0575daca112dedef2150d7b72609fab9679acf5d673766f7be82f3f1ed613773",
+      "audio_seconds": 3.498666666666667,
+      "status": "ok",
+      "transcript": "சரி, living room AC-ஐ 22°C-க்கு வைக்கிறேன்.",
+      "request_id": "20260917_5571525a-5932-4b8e-82be-4695de177158",
+      "detected_language": "ta-IN"
+    }
+  ]
+}

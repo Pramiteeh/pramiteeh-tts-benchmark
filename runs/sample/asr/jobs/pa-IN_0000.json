@@ -1,0 +1,117 @@
+{
+  "identity": {
+    "parameters": {
+      "model": "saaras:v3",
+      "mode": "codemix",
+      "language_code": "pa-IN",
+      "with_diarization": false,
+      "with_timestamps": false,
+      "input_audio_codec": "wav"
+    },
+    "inputs": [
+      {
+        "system": "ours",
+        "id": "sarvam_pa_0070",
+        "lang": "pa",
+        "language_code": "pa-IN",
+        "upload_name": "ours__sarvam_pa_0070.wav",
+        "relative_wav": "ours/sarvam_pa_0070.wav",
+        "wav_sha256": "48e90bff4c4057c1209f75f0011a59f83cc14e00ad708289323dbd18986248b6",
+        "audio_seconds": 8.576
+      },
+      {
+        "system": "sarvam",
+        "id": "sarvam_pa_0070",
+        "lang": "pa",
+        "language_code": "pa-IN",
+        "upload_name": "sarvam__sarvam_pa_0070.wav",
+        "relative_wav": "sarvam/sarvam_pa_0070.wav",
+        "wav_sha256": "99a6c7207db992768ed1541f2872e67feca3d5c41837dd3acd479cef1ed1b215",
+        "audio_seconds": 5.888
+      },
+      {
+        "system": "ours",
+        "id": "sarvam_pa_0071",
+        "lang": "pa",
+        "language_code": "pa-IN",
+        "upload_name": "ours__sarvam_pa_0071.wav",
+        "relative_wav": "ours/sarvam_pa_0071.wav",
+        "wav_sha256": "903c19d052de8c2c826c79fcf30db89fdc9497c0d1cde42c32b8a3d15ff143c4",
+        "audio_seconds": 6.516
+      },
+      {
+        "system": "sarvam",
+        "id": "sarvam_pa_0071",
+        "lang": "pa",
+        "language_code": "pa-IN",
+        "upload_name": "sarvam__sarvam_pa_0071.wav",
+        "relative_wav": "sarvam/sarvam_pa_0071.wav",
+        "wav_sha256": "eaf53ad4f9b9ab281cb7f97fb245470658f3f9757e8c0864d93c50bb62901f51",
+        "audio_seconds": 4.010666666666666
+      }
+    ]
+  },
+  "creation_pending": false,
+  "job_id": "20260917_9d44386c-c704-4f0b-b011-48923d12fbe9",
+  "storage": "Azure_V1",
+  "uploaded": true,
+  "job_state": "Completed",
+  "results": [
+    {
+      "system": "ours",
+      "id": "sarvam_pa_0070",
+      "lang": "pa",
+      "language_code": "pa-IN",
+      "upload_name": "ours__sarvam_pa_0070.wav",
+      "relative_wav": "ours/sarvam_pa_0070.wav",
+      "wav_sha256": "48e90bff4c4057c1209f75f0011a59f83cc14e00ad708289323dbd18986248b6",
+      "audio_seconds": 8.576,
+      "status": "ok",
+      "transcript": "ਮੈਂ ਅਮੋ ਬਟ ਅਤੇ 5 kg ਆਸ਼ੀਰਵਾਦ ਅੱਠ ਨੂੰ ਤੁਹਾਡੇ ਜ਼ੈਪਟੋਕਾਰਡ ਵਿੱਚ ਐਡ ਕਰ ਦਿੱਤਾ ਹੈ।",
+      "request_id": "20260917_8a85f515-b88d-4da4-b303-d00fa8046330",
+      "detected_language": "pa-IN"
+    },
+    {
+      "system": "sarvam",
+      "id": "sarvam_pa_0070",
+      "lang": "pa",
+      "language_code": "pa-IN",
+      "upload_name": "sarvam__sarvam_pa_0070.wav",
+      "relative_wav": "sarvam/sarvam_pa_0070.wav",
+      "wav_sha256": "99a6c7207db992768ed1541f2872e67feca3d5c41837dd3acd479cef1ed1b215",
+      "audio_seconds": 5.888,
+      "status": "ok",
+      "transcript": "ਡਨ, ਮੈਂ ਅਮੂਲ ਬਟਰ ਅਤੇ 5 ਕਿਲੋਗ੍ਰਾਮ ਆਸ਼ੀਰਵਾਦ ਆਟਾ ਨੂੰ ਤੁਹਾਡੇ Zepto ਕਾਰਟ ਵਿੱਚ ਐਡ ਕਰ ਦਿੱਤਾ ਹੈ।",
+      "request_id": "20260917_dd68fbac-305d-46b6-8cd1-eccef8771992",
+      "detected_language": "pa-IN"
+    },
+    {
+      "system": "ours",
+      "id": "sarvam_pa_0071",
+      "lang": "pa",
+      "language_code": "pa-IN",
+      "upload_name": "ours__sarvam_pa_0071.wav",
+      "relative_wav": "ours/sarvam_pa_0071.wav",
+      "wav_sha256": "903c19d052de8c2c826c79fcf30db89fdc9497c0d1cde42c32b8a3d15ff143c4",
+      "audio_seconds": 6.516,
+      "status": "ok",
+      "transcript": "ਠੀਕ ਹੈ, Living Room ਦਾ AC 22°C ਪ੍ਰਾਈਮ 'ਤੇ ਸੈੱਟ ਕਰ ਰਿਹਾ ਹਾਂ।",
+      "request_id": "20260917_9025c3aa-1678-42ac-9651-ff9199b009bb",
+      "detected_language": "pa-IN"
+    },
+    {
+      "system": "sarvam",
+      "id": "sarvam_pa_0071",
+      "lang": "pa",
+      "language_code": "pa-IN",
+      "upload_name": "sarvam__sarvam_pa_0071.wav",
+      "relative_wav": "sarvam/sarvam_pa_0071.wav",
+      "wav_sha256": "eaf53ad4f9b9ab281cb7f97fb245470658f3f9757e8c0864d93c50bb62901f51",
+      "audio_seconds": 4.010666666666666,
+      "status": "ok",
+      "transcript": "ਠੀਕ ਹੈ, ਲਿਵਿੰਗ ਰੂਮ ਦਾ ਏਸੀ ਬਾਈ ਡਿਗਰੀ ਸੈਲਸੀਅਸ ਤੇ ਸੈੱਟ ਕਰ ਰਿਹਾ ਹਾਂ।",
+      "request_id": "20260917_0fd9380d-3dd1-467f-acbf-3f82f6eb1a40",
+      "detected_language": "pa-IN"
+    }
+  ]
+}

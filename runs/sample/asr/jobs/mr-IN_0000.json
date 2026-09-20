@@ -1,0 +1,117 @@
+{
+  "identity": {
+    "parameters": {
+      "model": "saaras:v3",
+      "mode": "codemix",
+      "language_code": "mr-IN",
+      "with_diarization": false,
+      "with_timestamps": false,
+      "input_audio_codec": "wav"
+    },
+    "inputs": [
+      {
+        "system": "ours",
+        "id": "sarvam_mr_0050",
+        "lang": "mr",
+        "language_code": "mr-IN",
+        "upload_name": "ours__sarvam_mr_0050.wav",
+        "relative_wav": "ours/sarvam_mr_0050.wav",
+        "wav_sha256": "4abcc77686d4b556eb63e0d03f5bba6f228dd32ac51f0fed9d57f991a3e0df95",
+        "audio_seconds": 7.8
+      },
+      {
+        "system": "sarvam",
+        "id": "sarvam_mr_0050",
+        "lang": "mr",
+        "language_code": "mr-IN",
+        "upload_name": "sarvam__sarvam_mr_0050.wav",
+        "relative_wav": "sarvam/sarvam_mr_0050.wav",
+        "wav_sha256": "4a89d7f392fc15cf79eea244e0b18bb7b7af71d9ea66ebfddcd570d5040a946c",
+        "audio_seconds": 5.717333333333333
+      },
+      {
+        "system": "ours",
+        "id": "sarvam_mr_0051",
+        "lang": "mr",
+        "language_code": "mr-IN",
+        "upload_name": "ours__sarvam_mr_0051.wav",
+        "relative_wav": "ours/sarvam_mr_0051.wav",
+        "wav_sha256": "6889c6dad22628a75e2151ed86becb5e9d68d8ab9901eab1efdaffcbd2a2574e",
+        "audio_seconds": 5.171
+      },
+      {
+        "system": "sarvam",
+        "id": "sarvam_mr_0051",
+        "lang": "mr",
+        "language_code": "mr-IN",
+        "upload_name": "sarvam__sarvam_mr_0051.wav",
+        "relative_wav": "sarvam/sarvam_mr_0051.wav",
+        "wav_sha256": "221992f09ac91a254596088f441e6eae591061402469c33b1372e0bfcad4bc08",
+        "audio_seconds": 4.352
+      }
+    ]
+  },
+  "creation_pending": false,
+  "job_id": "20260917_e7545053-eedb-4e04-8773-7ec6169b4cb8",
+  "storage": "Azure_V1",
+  "uploaded": true,
+  "job_state": "Completed",
+  "results": [
+    {
+      "system": "ours",
+      "id": "sarvam_mr_0050",
+      "lang": "mr",
+      "language_code": "mr-IN",
+      "upload_name": "ours__sarvam_mr_0050.wav",
+      "relative_wav": "ours/sarvam_mr_0050.wav",
+      "wav_sha256": "4abcc77686d4b556eb63e0d03f5bba6f228dd32ac51f0fed9d57f991a3e0df95",
+      "audio_seconds": 7.8,
+      "status": "ok",
+      "transcript": "मी तुमच्या Zepto cartमध्ये Maggi noodles आणि 1 kg आशीर्वाद ॲट ॲड केले आहेत.",
+      "request_id": "20260917_70b9e2d1-b529-4e52-b0b4-beaa977f57b6",
+      "detected_language": "mr-IN"
+    },
+    {
+      "system": "sarvam",
+      "id": "sarvam_mr_0050",
+      "lang": "mr",
+      "language_code": "mr-IN",
+      "upload_name": "sarvam__sarvam_mr_0050.wav",
+      "relative_wav": "sarvam/sarvam_mr_0050.wav",
+      "wav_sha256": "4a89d7f392fc15cf79eea244e0b18bb7b7af71d9ea66ebfddcd570d5040a946c",
+      "audio_seconds": 5.717333333333333,
+      "status": "ok",
+      "transcript": "डन, मी तुमच्या झेप्टो कार्टमध्ये मॅगी नूडल्स आणि 1kg आशीर्वाद आटा ॲड केले आहेत.",
+      "request_id": "20260917_155c2f4a-e9d3-4215-a979-ac970cc431ea",
+      "detected_language": "mr-IN"
+    },
+    {
+      "system": "ours",
+      "id": "sarvam_mr_0051",
+      "lang": "mr",
+      "language_code": "mr-IN",
+      "upload_name": "ours__sarvam_mr_0051.wav",
+      "relative_wav": "ours/sarvam_mr_0051.wav",
+      "wav_sha256": "6889c6dad22628a75e2151ed86becb5e9d68d8ab9901eab1efdaffcbd2a2574e",
+      "audio_seconds": 5.171,
+      "status": "ok",
+      "transcript": "ठीक आहे, living room AC 22°C वर set करत आहे.",
+      "request_id": "20260917_5f0a637c-5821-41df-8377-5b45743e7955",
+      "detected_language": "mr-IN"
+    },
+    {
+      "system": "sarvam",
+      "id": "sarvam_mr_0051",
+      "lang": "mr",
+      "language_code": "mr-IN",
+      "upload_name": "sarvam__sarvam_mr_0051.wav",
+      "relative_wav": "sarvam/sarvam_mr_0051.wav",
+      "wav_sha256": "221992f09ac91a254596088f441e6eae591061402469c33b1372e0bfcad4bc08",
+      "audio_seconds": 4.352,
+      "status": "ok",
+      "transcript": "ठीक आहे, लिविंग रूम एसी 22 डिग्री सेल्सियस वर सेट करत आहे.",
+      "request_id": "20260917_91e00bc2-a35e-4b33-a754-c03fde3d7cf5",
+      "detected_language": "mr-IN"
+    }
+  ]
+}

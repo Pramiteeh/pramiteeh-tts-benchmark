@@ -1,0 +1,117 @@
+{
+  "identity": {
+    "parameters": {
+      "model": "saaras:v3",
+      "mode": "codemix",
+      "language_code": "en-IN",
+      "with_diarization": false,
+      "with_timestamps": false,
+      "input_audio_codec": "wav"
+    },
+    "inputs": [
+      {
+        "system": "ours",
+        "id": "sarvam_en_1150",
+        "lang": "en",
+        "language_code": "en-IN",
+        "upload_name": "ours__sarvam_en_1150.wav",
+        "relative_wav": "ours/sarvam_en_1150.wav",
+        "wav_sha256": "47803d245c6293f22bb7681683300e51ea8a71958653321a6025ecd4bfe76213",
+        "audio_seconds": 7.32
+      },
+      {
+        "system": "sarvam",
+        "id": "sarvam_en_1150",
+        "lang": "en",
+        "language_code": "en-IN",
+        "upload_name": "sarvam__sarvam_en_1150.wav",
+        "relative_wav": "sarvam/sarvam_en_1150.wav",
+        "wav_sha256": "2810922ee65369f8160d8c1f962af7d361b5e539607b2820ce1071e4463b4089",
+        "audio_seconds": 5.717333333333333
+      },
+      {
+        "system": "ours",
+        "id": "sarvam_en_1151",
+        "lang": "en",
+        "language_code": "en-IN",
+        "upload_name": "ours__sarvam_en_1151.wav",
+        "relative_wav": "ours/sarvam_en_1151.wav",
+        "wav_sha256": "a5c56b89d98e437fed04ecaaa076112f414e1738ea00f926bda3917bc38d93af",
+        "audio_seconds": 4.24
+      },
+      {
+        "system": "sarvam",
+        "id": "sarvam_en_1151",
+        "lang": "en",
+        "language_code": "en-IN",
+        "upload_name": "sarvam__sarvam_en_1151.wav",
+        "relative_wav": "sarvam/sarvam_en_1151.wav",
+        "wav_sha256": "b9ea7d426615a7fc9083da09208851f0240f240cd641bb99f24e77a092b058a3",
+        "audio_seconds": 3.7546666666666666
+      }
+    ]
+  },
+  "creation_pending": false,
+  "job_id": "20260917_deb6e05e-b270-46ae-9c70-007fef2fb668",
+  "storage": "Azure_V1",
+  "uploaded": true,
+  "job_state": "Completed",
+  "results": [
+    {
+      "system": "ours",
+      "id": "sarvam_en_1150",
+      "lang": "en",
+      "language_code": "en-IN",
+      "upload_name": "ours__sarvam_en_1150.wav",
+      "relative_wav": "ours/sarvam_en_1150.wav",
+      "wav_sha256": "47803d245c6293f22bb7681683300e51ea8a71958653321a6025ecd4bfe76213",
+      "audio_seconds": 7.32,
+      "status": "ok",
+      "transcript": "done. I've added Tata salt and 750 milliliters Fortune sunflower refined oil to your Blinkit cart.",
+      "request_id": "20260917_82ada972-db72-401b-bcbf-7447b2e0455e",
+      "detected_language": "en-IN"
+    },
+    {
+      "system": "sarvam",
+      "id": "sarvam_en_1150",
+      "lang": "en",
+      "language_code": "en-IN",
+      "upload_name": "sarvam__sarvam_en_1150.wav",
+      "relative_wav": "sarvam/sarvam_en_1150.wav",
+      "wav_sha256": "2810922ee65369f8160d8c1f962af7d361b5e539607b2820ce1071e4463b4089",
+      "audio_seconds": 5.717333333333333,
+      "status": "ok",
+      "transcript": "Done. I have added Tata Salt and 750 ml Fortune Sunflower Refined Oil to your Blinkit cart.",
+      "request_id": "20260917_bf93cc9f-866a-4553-8cf6-690a62e2f60b",
+      "detected_language": "en-IN"
+    },
+    {
+      "system": "ours",
+      "id": "sarvam_en_1151",
+      "lang": "en",
+      "language_code": "en-IN",
+      "upload_name": "ours__sarvam_en_1151.wav",
+      "relative_wav": "ours/sarvam_en_1151.wav",
+      "wav_sha256": "a5c56b89d98e437fed04ecaaa076112f414e1738ea00f926bda3917bc38d93af",
+      "audio_seconds": 4.24,
+      "status": "ok",
+      "transcript": "Okay, setting the master bedroom AC to 24 degrees Celsius.",
+      "request_id": "20260917_26d65f4b-7139-477d-81dc-49d489ced319",
+      "detected_language": "en-IN"
+    },
+    {
+      "system": "sarvam",
+      "id": "sarvam_en_1151",
+      "lang": "en",
+      "language_code": "en-IN",
+      "upload_name": "sarvam__sarvam_en_1151.wav",
+      "relative_wav": "sarvam/sarvam_en_1151.wav",
+      "wav_sha256": "b9ea7d426615a7fc9083da09208851f0240f240cd641bb99f24e77a092b058a3",
+      "audio_seconds": 3.7546666666666666,
+      "status": "ok",
+      "transcript": "Okay. Setting the master bedroom AC to 24 degree Celsius.",
+      "request_id": "20260917_cfcff7c0-f913-43d9-aac8-3a54b6c6d75b",
+      "detected_language": "en-IN"
+    }
+  ]
+}
