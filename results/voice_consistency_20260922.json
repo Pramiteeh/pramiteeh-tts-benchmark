@@ -1,0 +1,248 @@
+{
+  "schema_version": 1,
+  "description": "Completed full-dataset within-language speaker-consistency evaluation. This is a retained historical result, not a new inference run.",
+  "completed_at": "2026-09-22T14:26:35.628688+00:00",
+  "corpus": {
+    "prompts_per_system": 1265,
+    "languages": 11,
+    "prompts_per_language": 115,
+    "scored_clips": 2530
+  },
+  "config": {
+    "metric": "within-language leave-one-out ECAPA-TDNN cosine similarity",
+    "scorer": "speechbrain/spkrec-ecapa-voxceleb",
+    "scorer_revision": "0f99f2d0ebe89ac095bcc5903c4dd8f72b367286",
+    "scorer_files": {
+      "embedding_model.ckpt": "0575cb64845e6b9a10db9bcb74d5ac32b326b8dc90352671d345e2ee3d0126a2",
+      "hyperparams.yaml": "6f78854fa04ba59e761437b76a2575d3aba5e5016de3e9b69f0c9a5077fb1a41",
+      "mean_var_norm_emb.ckpt": "cd70225b05b37be64fc5a95e24395d804231d43f74b2e1e5a513db7b69b34c33"
+    },
+    "target_sample_rate": 16000,
+    "systems": {
+      "pramiteeh": {
+        "manifest": "8aeb56472e58d6ec746194d0c01313822d0b687b784c6e6f839076ecd7f172a8",
+        "items": 1265
+      },
+      "sarvam": {
+        "manifest": "5cb15bfe14a493e35a0b21403267c76bee22211a64ed1c411c5ecc18ccc8522e",
+        "items": 1265
+      }
+    },
+    "grouping": "system + language + selected voice",
+    "device": "cuda:0",
+    "batch_size": 32,
+    "run_system": "both",
+    "language": null,
+    "max_audio_seconds": 6.0
+  },
+  "result": {
+    "pramiteeh": {
+      "macro_mean_across_languages": 0.8893409555137393,
+      "per_language": {
+        "bn": {
+          "count": 115,
+          "mean": 0.8875002327172653,
+          "median": 0.8916261792182922,
+          "standard_deviation": 0.02834847572248699,
+          "minimum": 0.7551438808441162,
+          "maximum": 0.9360300898551941
+        },
+        "en": {
+          "count": 115,
+          "mean": 0.8414259034654369,
+          "median": 0.8678641319274902,
+          "standard_deviation": 0.10099438440861518,
+          "minimum": 0.17845842242240906,
+          "maximum": 0.9129847288131714
+        },
+        "gu": {
+          "count": 115,
+          "mean": 0.9156737524530162,
+          "median": 0.9228023886680603,
+          "standard_deviation": 0.029740263171011666,
+          "minimum": 0.7783305644989014,
+          "maximum": 0.9596753120422363
+        },
+        "hi": {
+          "count": 115,
+          "mean": 0.907988092692002,
+          "median": 0.9176506996154785,
+          "standard_deviation": 0.04212292508920916,
+          "minimum": 0.6642618775367737,
+          "maximum": 0.9476415514945984
+        },
+        "kn": {
+          "count": 115,
+          "mean": 0.8743855201679728,
+          "median": 0.8808517456054688,
+          "standard_deviation": 0.04416812776862111,
+          "minimum": 0.5478087663650513,
+          "maximum": 0.9219102263450623
+        },
+        "ml": {
+          "count": 115,
+          "mean": 0.8941732131916543,
+          "median": 0.9025605916976929,
+          "standard_deviation": 0.034449410323323784,
+          "minimum": 0.7334694862365723,
+          "maximum": 0.9367642402648926
+        },
+        "mr": {
+          "count": 115,
+          "mean": 0.899137266304182,
+          "median": 0.9069143533706665,
+          "standard_deviation": 0.04184147836722459,
+          "minimum": 0.5567623376846313,
+          "maximum": 0.9397721886634827
+        },
+        "or": {
+          "count": 115,
+          "mean": 0.8873581725618114,
+          "median": 0.8943461179733276,
+          "standard_deviation": 0.03127582978701662,
+          "minimum": 0.7067362070083618,
+          "maximum": 0.9403252601623535
+        },
+        "pa": {
+          "count": 115,
+          "mean": 0.8801875632742177,
+          "median": 0.8919472694396973,
+          "standard_deviation": 0.04070386234474108,
+          "minimum": 0.6453186273574829,
+          "maximum": 0.93812096118927
+        },
+        "ta": {
+          "count": 115,
+          "mean": 0.8844670337179433,
+          "median": 0.8959674835205078,
+          "standard_deviation": 0.042554075041949524,
+          "minimum": 0.6557657718658447,
+          "maximum": 0.9378452897071838
+        },
+        "te": {
+          "count": 115,
+          "mean": 0.9104537601056306,
+          "median": 0.9150105714797974,
+          "standard_deviation": 0.026228618505166543,
+          "minimum": 0.7386952638626099,
+          "maximum": 0.9451138973236084
+        }
+      },
+      "all_clips": {
+        "count": 1265,
+        "mean": 0.8893409555137393,
+        "median": 0.8994861841201782,
+        "standard_deviation": 0.050218565987291165,
+        "minimum": 0.17845842242240906,
+        "maximum": 0.9596753120422363
+      }
+    },
+    "sarvam": {
+      "macro_mean_across_languages": 0.839871779991233,
+      "per_language": {
+        "bn": {
+          "count": 115,
+          "mean": 0.8448428926260575,
+          "median": 0.8548357486724854,
+          "standard_deviation": 0.046109720187201136,
+          "minimum": 0.5834764242172241,
+          "maximum": 0.9026957750320435
+        },
+        "en": {
+          "count": 115,
+          "mean": 0.8374382304108661,
+          "median": 0.8512703776359558,
+          "standard_deviation": 0.058421729900424955,
+          "minimum": 0.437701940536499,
+          "maximum": 0.9132065773010254
+        },
+        "gu": {
+          "count": 115,
+          "mean": 0.8475440839062567,
+          "median": 0.8582628965377808,
+          "standard_deviation": 0.04311030731769532,
+          "minimum": 0.6382695436477661,
+          "maximum": 0.9096188545227051
+        },
+        "hi": {
+          "count": 115,
+          "mean": 0.8378911604052005,
+          "median": 0.8468366861343384,
+          "standard_deviation": 0.048364402639534614,
+          "minimum": 0.5657908916473389,
+          "maximum": 0.9033541679382324
+        },
+        "kn": {
+          "count": 115,
+          "mean": 0.8461851451707922,
+          "median": 0.8557994961738586,
+          "standard_deviation": 0.039258093677621474,
+          "minimum": 0.5995653867721558,
+          "maximum": 0.8959825038909912
+        },
+        "ml": {
+          "count": 115,
+          "mean": 0.8330179204111514,
+          "median": 0.846962571144104,
+          "standard_deviation": 0.05152997845400518,
+          "minimum": 0.5832853317260742,
+          "maximum": 0.8937481641769409
+        },
+        "mr": {
+          "count": 115,
+          "mean": 0.8384282542311627,
+          "median": 0.849844217300415,
+          "standard_deviation": 0.05659361065237906,
+          "minimum": 0.4900989532470703,
+          "maximum": 0.9040679335594177
+        },
+        "or": {
+          "count": 115,
+          "mean": 0.8372917846493099,
+          "median": 0.8514894247055054,
+          "standard_deviation": 0.05771452381979179,
+          "minimum": 0.43932709097862244,
+          "maximum": 0.920495867729187
+        },
+        "pa": {
+          "count": 115,
+          "mean": 0.8444748095844103,
+          "median": 0.850692629814148,
+          "standard_deviation": 0.03803883126281654,
+          "minimum": 0.6864492893218994,
+          "maximum": 0.9100747108459473
+        },
+        "ta": {
+          "count": 115,
+          "mean": 0.8335482151611991,
+          "median": 0.8380095958709717,
+          "standard_deviation": 0.04451951300023558,
+          "minimum": 0.5442808866500854,
+          "maximum": 0.9093117713928223
+        },
+        "te": {
+          "count": 115,
+          "mean": 0.8379270833471547,
+          "median": 0.8511372804641724,
+          "standard_deviation": 0.05026770376530163,
+          "minimum": 0.544500470161438,
+          "maximum": 0.90058434009552
+        }
+      },
+      "all_clips": {
+        "count": 1265,
+        "mean": 0.8398717799912329,
+        "median": 0.8509341478347778,
+        "standard_deviation": 0.04905289487288622,
+        "minimum": 0.437701940536499,
+        "maximum": 0.920495867729187
+      }
+    }
+  },
+  "interpretation": "Higher values indicate a more stable ECAPA speaker embedding within the same language and selected voice across prompts. This does not measure intelligibility, naturalness, voice-cloning fidelity or listener preference.",
+  "limitations": [
+    "The benchmark uses language-specific Pramiteeh female voices, so cross-language pooling is intentionally excluded.",
+    "ECAPA embeddings can vary with language, recording duration and prosody; macro-average within-language values are the comparison metric.",
+    "This scores the saved 2026-09-16 outputs and does not measure a provider’s current service after model updates."
+  ]
+}

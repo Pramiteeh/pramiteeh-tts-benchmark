@@ -13,12 +13,15 @@ import unittest
 from unittest.mock import Mock, patch
 import wave
 
+import numpy as np
+
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 import common
 import generate
 import mos_score
 import report
 import run
+import voice_consistency
 from score_sarvam import save_report
 
 
@@ -152,6 +155,24 @@ class PipelineTest(unittest.TestCase):
         self.assertFalse((self.root / "REPORT.md").exists())
 
 
+class VoiceConsistencyTest(unittest.TestCase):
+    def test_summary_is_leave_one_out_and_grouped_by_language_voice(self):
+        records = [
+            {"id": "hi1", "lang": "hi", "voice": "hi_female", "wav_sha256": "a"},
+            {"id": "hi2", "lang": "hi", "voice": "hi_female", "wav_sha256": "b"},
+            {"id": "en1", "lang": "en", "voice": "en_female", "wav_sha256": "c"},
+            {"id": "en2", "lang": "en", "voice": "en_female", "wav_sha256": "d"},
+        ]
+        embeddings = {
+            "hi1": np.array([1.0, 0.0]), "hi2": np.array([1.0, 0.0]),
+            "en1": np.array([0.0, 1.0]), "en2": np.array([0.0, 1.0]),
+        }
+        result, rows = voice_consistency.summary(records, embeddings)
+        self.assertEqual(result["n"], 4)
+        self.assertAlmostEqual(result["macro_mean_across_languages"], 1.0)
+        self.assertEqual({row["id"] for row in rows}, {"hi1", "hi2", "en1", "en2"})
+
+
 class PreprocessingTest(unittest.TestCase):
     def test_resampling_overshoot_is_clipped_before_dnsmos(self):
         import numpy as np
@@ -219,7 +240,7 @@ class AuthenticationTest(unittest.TestCase):
                 self.assertNotIn(sarvam_key, manifest)
 
     def test_local_runner_stages_need_no_keys(self):
-        for stage in ("mos", "report"):
+        for stage in ("mos", "consistency", "report"):
             with self.subTest(stage=stage), patch.dict(os.environ, {}, clear=True), patch.object(run, "run") as child:
                 invoke(run, ["--stage", stage])
                 self.assertEqual(child.call_count, 1)

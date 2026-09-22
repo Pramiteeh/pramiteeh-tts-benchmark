@@ -63,6 +63,33 @@ def validate_coverage(items, dataset_hash, systems, asr, mos, scores):
                 raise ValueError(f"Invalid MOS score: {system}/{wid}")
 
 
+def validate_consistency(items, dataset_hash, systems, consistency, asr):
+    expected_ids = {row["id"] for row in items}
+    expected_langs = Counter(row["lang"] for row in items)
+    if consistency.get("coverage_complete") is not True:
+        raise ValueError("Voice-consistency coverage is incomplete")
+    config = consistency.get("config", {})
+    if config.get("sentences_sha256") != dataset_hash or config.get("systems") != systems:
+        raise ValueError("Voice-consistency dataset or systems differ from this report")
+    if consistency.get("expected_clips") != len(items) * len(systems) or consistency.get("scored_clips") != len(items) * len(systems):
+        raise ValueError("Voice-consistency clip counts differ from the full dataset")
+    inputs = {(row["system"], row["id"]): row for row in asr["config"].get("inputs", [])}
+    for system in systems:
+        stats = consistency.get("systems", {}).get(system, {})
+        if stats.get("n") != len(items) or set(stats.get("per_language", {})) != set(expected_langs):
+            raise ValueError(f"Voice consistency/{system} has incomplete coverage")
+        scores = consistency.get("per_clip", {}).get(system, [])
+        if len(scores) != len(items) or {row.get("id") for row in scores} != expected_ids:
+            raise ValueError(f"Voice consistency/{system} lacks per-clip scores")
+        for lang, count in expected_langs.items():
+            if stats["per_language"][lang].get("n") != count:
+                raise ValueError(f"Voice consistency/{system}/{lang} has incomplete coverage")
+        for row in scores:
+            original = inputs.get((system, row["id"]), {})
+            if row.get("wav_sha256") != original.get("wav_sha256"):
+                raise ValueError(f"Voice consistency used different audio: {system}/{row['id']}")
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--run", type=Path, required=True)
@@ -78,6 +105,10 @@ def main():
         mos_summary = load(args.run / "mos" / "summary.json")
         scores = load(args.run / "mos" / "mos_scores.json")
         validate_coverage(items, dataset_hash, args.systems, asr_summary, mos_summary, scores)
+        consistency_path = args.run / "voice_consistency" / "voice_consistency.json"
+        consistency = load(consistency_path) if consistency_path.is_file() else None
+        if consistency is not None:
+            validate_consistency(items, dataset_hash, args.systems, consistency, asr_summary)
     except (ValueError, KeyError, TypeError, OSError) as exc:
         parser.exit(1, f"Report not written: {exc}\n")
     asr, mos = asr_summary["systems"], mos_summary["systems"]
@@ -105,8 +136,15 @@ def main():
         ("DNSMOS P.808", lambda s: mos[s]["p808"]),
         ("DNSMOS OVRL", lambda s: mos[s]["ovrl"]),
     ]
+    if consistency is not None:
+        rows.append(("Voice consistency", lambda s: consistency["systems"][s]["macro_mean_across_languages"]))
     for label, fn in rows:
         out.append(f"| {label} | " + " | ".join(cell(fn(s)) for s in sysd) + " |")
+    if consistency is not None:
+        out += ["", "## Per-language voice consistency (higher better)", "",
+                "| Lang | " + " | ".join(sysd) + " |", "|" + "---|" * (len(sysd) + 1)]
+        for lang in langs:
+            out.append(f"| {lang} | " + " | ".join(cell(consistency["systems"][s]["per_language"][lang]["mean"]) for s in sysd) + " |")
     out += ["", "## Per-language Corpus WER % (lower better)", "",
             "| Lang | Clips per system | " + " | ".join(sysd) + " |", "|" + "---|" * (len(sysd) + 2)]
     for lang in langs:
@@ -120,6 +158,7 @@ def main():
             f"- ASR: {asr_summary['config'].get('model')} / {asr_summary['config'].get('mode')}, applied to both systems including English.",
             "- WER/CER measure ASR agreement with the written reference; numbers, spelling and code-mixing can inflate errors.",
             "- DNSMOS uses finite mono 16 kHz audio clipped to [-1, 1] after resampling. It is a quality proxy, not a human MOS study.",
+            "- Voice consistency, when present, is a within-language ECAPA speaker-embedding stability score over a fixed audio window. It is not a voice-cloning or listener-preference score.",
             "- All overall and per-language comparisons use identical prompt IDs across both systems.",
             "- The 22-prompt sample is a smoke test; use the full 1,265-prompt set for headline results.", ""]
     text = "\n".join(out)

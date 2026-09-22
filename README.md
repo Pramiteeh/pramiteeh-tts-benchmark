@@ -2,7 +2,7 @@
 
 Compare Pramiteeh and **Sarvam Bulbul v3** on the same prompts across **10 Indic
 languages plus English**. The pipeline generates WAVs, transcribes both systems
-with **Sarvam batch ASR**, scores **DNSMOS P.808/OVRL** locally, and writes a report
+with **Sarvam batch ASR**, scores **DNSMOS P.808/OVRL** and within-language speaker consistency locally, and writes a report
 only after verifying complete, matching coverage.
 
 ## Full benchmark comparison
@@ -26,6 +26,7 @@ and equal-coverage procedure.
 | Sentence-average CER % ↓ | 20.58 | 28.47 |
 | DNSMOS P.808 ↑ | 3.69 | 4.11 |
 | DNSMOS OVRL ↑ | 3.30 | 3.36 |
+| Voice consistency ↑ | 0.8893 | 0.8399 |
 
 ### Per-language comparison
 
@@ -52,7 +53,9 @@ quality; neither is a human listening score. Numbers, spelling and code-mixing
 can increase WER even when the spoken output is acceptable.
 
 The [full-precision result snapshot](results/full_20260917.json) includes
-coverage, scoring settings, per-language metrics and source-summary hashes.
+coverage, scoring settings, per-language metrics and source-summary hashes. The
+[voice-consistency snapshot](results/voice_consistency_20260922.json) records
+the independent speaker-stability calculation and its scorer revision.
 These are retained measurements from the original run. Its Pramiteeh manifest
 did not pin the server model/runtime commit, so rerunning against a changed
 server or provider may produce different scores.
@@ -110,6 +113,7 @@ Local rescoring and report generation need **no API keys**:
 
 ```bash
 python run.py --dataset sample --stage mos
+python run.py --dataset sample --stage consistency
 python run.py --dataset sample --stage report
 ```
 
@@ -147,7 +151,7 @@ key is not interchangeable with the private inference key.
 | `--sarvam-speaker` | `shubh` | Sarvam speaker |
 | `--sarvam-model` | `bulbul:v3` | Sarvam TTS model |
 | `--asr-model` | `saaras:v3` | Sarvam ASR model |
-| `--stage` | `all` | `generate`, `asr`, `mos`, or `report` |
+| `--stage` | `all` | `generate`, `asr`, `mos`, `consistency`, or `report` |
 
 `OURS_VOICE_MODE`, `SARVAM_SPEAKER`, and `SARVAM_MODEL` also set those defaults.
 For a custom dataset, use the same `--sentences` and `--output` for every stage.
@@ -162,6 +166,7 @@ runs/sample/
   asr/transcripts.json        asr/transcripts.tsv
   asr/summary.json
   mos/mos_scores.json         mos/summary.json
+  voice_consistency/voice_consistency.json
   REPORT.md
 ```
 
@@ -175,7 +180,11 @@ output directory at a time.
 
 MOS rejects empty/nonfinite audio and clips resampling overshoot to `[-1, 1]`
 before scoring. Both systems' MOS aggregates use the intersection of successful
-prompt IDs. Missing audio, hash mismatches, or scoring failures produce an
+prompt IDs. Voice consistency validates every generation manifest and WAV hash,
+then embeds the first six seconds of every clip at mono 16 kHz with a pinned
+ECAPA-TDNN speaker encoder. It compares each clip with the leave-one-out
+centroid for its language and selected voice; this controls duration without
+claiming naturalness, intelligibility, or voice-cloning accuracy. Missing audio, hash mismatches, or scoring failures produce an
 incomplete summary and a nonzero exit status.
 
 The combined report additionally verifies:
@@ -211,8 +220,10 @@ changing the generated input. Odia uses `or` internally and `od-IN` for Sarvam.
   marks/numbers and underscore retained, joiners removed, punctuation to spaces.
 - WER/CER measure ASR agreement with the reference. Digits versus spoken number
   words, spelling, code-mixing and ASR mistakes can increase these scores.
-- DNSMOS is an automatic quality proxy, not a human listening study. A 22-prompt
-  smoke test does not establish performance on the full benchmark.
+- DNSMOS is an automatic quality proxy, not a human listening study. Voice
+  consistency is a speaker-embedding stability measure, not a voice-cloning or
+  human-listener metric. A 22-prompt smoke test does not establish performance
+  on the full benchmark.
 - HTTP elapsed time in generation manifests measures the complete response,
   including network and queue time. It is not time to first streamed audio.
 - Keep model/runtime/voice versions fixed within a run. Manifests cannot prove

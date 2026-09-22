@@ -2,7 +2,7 @@
 """One-command Indic TTS benchmark: ours vs Sarvam.
 
 Pipeline (all resumable): generate ours -> generate Sarvam -> Sarvam ASR
-transcripts + WER/CER -> DNSMOS naturalness -> combined REPORT.md.
+transcripts + WER/CER -> DNSMOS naturalness -> speaker consistency -> combined REPORT.md.
 
 Inputs (that is all you provide):
   SARVAM_API_KEY   Sarvam key (env or --sarvam-key-file) — used for Sarvam TTS + ASR.
@@ -51,7 +51,7 @@ def main():
     p.add_argument("--sarvam-key-file", type=Path, help="File containing only the Sarvam key")
     p.add_argument("--tts-key-file", type=Path, help="Private inference key file; alternative to TTS_API_KEY_FILE")
     p.add_argument("--asr-model", default="saaras:v3")
-    p.add_argument("--stage", choices=["all", "generate", "asr", "mos", "report"], default="all")
+    p.add_argument("--stage", choices=["all", "generate", "asr", "mos", "consistency", "report"], default="all")
     args = p.parse_args()
 
     sentences = args.sentences or DATASETS[args.dataset]
@@ -90,6 +90,9 @@ def main():
     if want("mos"):
         run(py + [str(HERE / "mos_score.py"), "--sentences", str(sentences), "--audio-root", str(output),
                   "--systems", "ours", "sarvam", "--output", str(output / "mos")], env)
+    if want("consistency"):
+        run(py + [str(HERE / "voice_consistency.py"), "--sentences", str(sentences), "--audio-root", str(output),
+                  "--systems", "ours", "sarvam", "--output", str(output / "voice_consistency")], env)
     if want("report"):
         run(py + [str(HERE / "report.py"), "--run", str(output), "--sentences", str(sentences),
                   "--systems", "ours", "sarvam"], env)
